@@ -148,7 +148,7 @@ async function getBG(){
 
     }
     else{
-        backgroundImg = loadImage("sprites/bg2.jpg")
+        backgroundImg = loadImage("sprites/bg2.png")
     }
 
 
