@@ -126,11 +126,16 @@ function mouseReleased(){
     gameState = "launched";
 }
 
-function keyPressed(){
-    if(keyCode === 32){
-       // slingshot.attach(covid19.body);
-    }
-}
+/*function keyPressed(){
+    if(keyCode === 32 && covid19.body.speed<1){
+        
+        slingshot.attach(covid19.body);
+        covid19.trajectory=[];
+        Matter.Body.setPosition(covid19.body,{x : 200 , y : 50});
+        gameState = "onSling";
+     }
+     
+    }*/
 
 async function getBG(){
     var responce = await fetch("http://worldtimeapi.org/api/timezone/Asia/kolkata");
