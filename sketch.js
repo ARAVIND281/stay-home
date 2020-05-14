@@ -143,13 +143,14 @@ async function getBG(){
     var dateTime = responceJSON.datetime;
     var hour = dateTime.slice(11,13);
     console.log(hour);
-    if(hour>=06 && hour<=18){
+    if(hour>=06 && hour<=18 ){
      backgroundImg = loadImage ("sprites/bg.png");
 
     }
-    else{
-        backgroundImg = loadImage("sprites/bg2.png")
+    if(hour >=0 && hour<=5 && hour>=19 && hour <=23){
+        backgroundImg = loadImage("sprites/bg3.png")
     }
+    
 
 
 }
